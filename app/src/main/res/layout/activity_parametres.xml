@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paramètres"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Définir le budget mensuel:" />
+
+    <EditText
+        android:id="@+id/editTextBudget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entrez le budget (en dinars)"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:id="@+id/textViewBudgetPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Budget actuel : Non défini"
+        android:textStyle="italic"
+        android:textColor="#616161"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnSaveBudget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enregistrer le Budget" />
+
+    <Button
+        android:id="@+id/btnClearExpenses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Effacer Toutes les Dépenses"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajouter une Catégorie:"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/editTextCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entrez le nom de la catégorie" />
+
+    <Button
+        android:id="@+id/btnAddCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajouter Catégorie"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Supprimer une Catégorie:"
+        android:layout_marginTop="16dp" />
+
+    <Spinner
+        android:id="@+id/spinnerCategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnDeleteCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Effacer Catégorie"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btnGoBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retour à l'accueil"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
